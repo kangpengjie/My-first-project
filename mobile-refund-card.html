@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>退次卡 - 移动端</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <!-- 头部 -->
+        <header class="header">
+            <button class="back-btn">←</button>
+            <h1 class="title">退次卡</h1>
+            <button class="close-btn">×</button>
+        </header>
+
+        <!-- 表单区域 -->
+        <div class="form-section">
+            <div class="form-group">
+                <label for="cardName">次卡名称:</label>
+                <input type="text" id="cardName" value="健身次卡" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="cardNumber">卡号:</label>
+                <input type="text" id="cardNumber" value="FC2IC2408270001" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="applyDate">申请日期:</label>
+                <input type="date" id="applyDate" value="2024-08-27" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="remarks">备注:</label>
+                <textarea id="remarks" placeholder="请输入备注信息" rows="3"></textarea>
+            </div>
+        </div>
+
+        <!-- 项目信息标题 -->
+        <div class="section-title">
+            <h2>请选择次卡项目</h2>
+        </div>
+
+        <!-- 项目卡片列表 -->
+        <div class="projects-list">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-name">舞蹈天下</h3>
+                    <input type="checkbox" class="project-checkbox" checked>
+                </div>
+                <div class="project-info">
+                    <div class="info-row">
+                        <span class="label">剩余次数:</span>
+                        <span class="value">5</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">剩余金额:</span>
+                        <span class="value amount">¥1128</span>
+                    </div>
+                </div>
+                <div class="refund-inputs">
+                    <div class="input-group">
+                        <label>退回次数</label>
+                        <input type="number" placeholder="0" min="0" max="5">
+                    </div>
+                    <div class="input-group">
+                        <label>退回金额</label>
+                        <input type="number" placeholder="0" min="0" max="1128">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-name">营养红</h3>
+                    <input type="checkbox" class="project-checkbox">
+                </div>
+                <div class="project-info">
+                    <div class="info-row">
+                        <span class="label">剩余次数:</span>
+                        <span class="value">5</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">剩余金额:</span>
+                        <span class="value amount">¥1118</span>
+                    </div>
+                </div>
+                <div class="refund-inputs">
+                    <div class="input-group">
+                        <label>退回次数</label>
+                        <input type="number" placeholder="0" min="0" max="5" disabled>
+                    </div>
+                    <div class="input-group">
+                        <label>退回金额</label>
+                        <input type="number" placeholder="0" min="0" max="1118" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部操作按钮 -->
+        <div class="footer-actions">
+            <button class="btn btn-secondary">取消</button>
+            <button class="btn btn-primary">下一步</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
