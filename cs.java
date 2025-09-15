@@ -1,6 +1,6 @@
-public class cs(){
+public class cs {
 
 	public static void main(String args[]){
-		System.out.println("µÚ¶ş´Î´´½¨");
+		System.out.println("ç¬¬äºŒæ¬¡ä»£ç ");
 	}
 }
